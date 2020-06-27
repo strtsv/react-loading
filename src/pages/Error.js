@@ -1,7 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Router } from "react-router-dom";
 const Error = () => {
   return (
+    <Router>
+      <Link to="/" className="btn-primary">
+        return home
+      </Link>
+    </Router>
   );
 };
 
