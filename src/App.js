@@ -1,5 +1,9 @@
 import React from "react";
-import "./App.css";
+import "./css/contact-form.css";
+import "./css/grid.css";
+import "./css/search.css";
+import "./css/style.css";
+import "./css/App.css";
 
 import Home from "./pages/Home";
 import Error from "./pages/Error";

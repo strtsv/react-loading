@@ -1,0 +1,1164 @@
+@import "animate.css";
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+@import url(http://fonts.googleapis.com/css?family=Racing+Sans+One);
+@import url(http://fonts.googleapis.com/css?family=Asap);
+@import url(http://fonts.googleapis.com/css?family=Asap:700);
+@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans);
+/*========================================================
+                    Main layout styles
+=========================================================*/
+body {
+  font: 400 12px/16px "Droid Sans", sans-serif;
+  color: #8f8682;
+  background: #202020;
+  background-attachment: fixed;
+  min-width: 1366px;
+}
+@media (max-width: 1199px) {
+  body {
+    min-width: 0;
+  }
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+a:hover {
+  color: #efc74f;
+}
+img {
+  max-width: 100%;
+}
+* {
+  -webkit-text-size-adjust: none;
+}
+/* ======= Headers ======= */
+h2 {
+  font: 400 23px/32px "Racing Sans One", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+h3 {
+  font: 700 13px/18px "Asap", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+h3 a:hover {
+  color: #ffffff;
+}
+h4 {
+  font: 400 13px/18px "Asap", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+h5 {
+  font: 700 13px/18px "Asap", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+h6 {
+  font: 700 36px/36px "Asap", sans-serif;
+  color: #efc74f;
+  letter-spacing: -0.02em;
+}
+.h7 {
+  font: 400 12px/16px "Droid Sans", sans-serif;
+  color: #ffffff;
+  display: block;
+}
+.heading1 {
+  margin-bottom: 26px;
+}
+/* ======= Buttons ======= */
+.btn-default {
+  display: inline-block;
+  font: 400 13px/18px "Asap", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #202020;
+  text-align: center;
+  padding: 4px 21px;
+}
+.btn-default:hover {
+  color: #ffffff;
+  background: #efc74f;
+}
+.btn-big {
+  display: inline-block;
+}
+/* ======= Wrappers ======= */
+.background-wrapper {
+  background: url(../images/main-background.png) repeat #2f2c2a fixed;
+}
+.big-wrapper {
+  width: 1356px;
+  background: url(../images/wrapper-background.png) repeat #423e3a;
+  margin: 0 auto;
+}
+@media (max-width: 1199px) {
+  .big-wrapper {
+    width: auto;
+    margin: 0;
+  }
+}
+.wrapper1 {
+  padding: 51px 0 68px;
+}
+/*========================================================
+                    HEADER styles
+=========================================================*/
+#header {
+  padding: 17px 0 0;
+}
+#header .socials {
+  text-align: right;
+}
+#header .info {
+  padding: 1px 0 41px;
+}
+#header h1 {
+  float: left;
+  overflow: hidden;
+}
+#header #search {
+  float: right;
+  margin-top: 32px;
+}
+#header .menu-wrapper {
+  padding: 7px 50px 22px;
+  background: #202020;
+}
+@media (max-width: 1199px) {
+  #header .menu-wrapper {
+    text-align: center;
+  }
+  #header .menu-wrapper nav {
+    display: inline-block;
+  }
+}
+#header #stuck_container.isStuck {
+  left: 0;
+  background: #202020;
+}
+@media (max-width: 767px) {
+  #header {
+    text-align: center;
+  }
+  #header .socials {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #header h1 {
+    float: none;
+  }
+  #header #search {
+    float: none;
+    display: inline-block;
+  }
+}
+/* ======= Logo ======= */
+h1 {
+  display: inline-block;
+}
+h1 a {
+  display: block;
+}
+h1 .first {
+  display: inline-block;
+  color: #ffffff;
+  font: 400 66px/66px "Racing Sans One", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+h1 .second {
+  font: 700 24px/24px "Asap", sans-serif;
+  text-transform: uppercase;
+  color: #efc74f;
+  letter-spacing: -0.02em;
+  display: inline-block;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  margin-top: 22px;
+  margin-left: -2px;
+}
+@media (max-width: 479px) {
+  h1 .second {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+    margin-top: 0;
+  }
+}
+/* ======= Main menu variables ======= */
+/* ======= Sub menus common variables ======= */
+/* ======= First level sub menu variables ======= */
+nav {
+  margin-top: 15px;
+  float: none;
+}
+/* Main menu styles
+========================================================*/
+.sf-menu > li {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  position: relative;
+  text-align: center;
+}
+.sf-menu > li + li {
+  margin-left: 76px;
+}
+.sf-menu > li + li:before {
+  position: absolute;
+  display: block;
+  content: '';
+  top: 1px;
+  width: 1px;
+  height: 11px;
+  background: #404040;
+  left: -39px;
+}
+@media (max-width: 1199px) {
+  .sf-menu > li + li {
+    margin-left: 30px;
+  }
+  .sf-menu > li + li:before {
+    display: none;
+  }
+}
+@media (max-width: 979px) {
+  .sf-menu > li + li {
+    margin-left: 10px;
+  }
+}
+.sf-menu > li > .sf-with-ul:after {
+  display: block;
+  font-family: FontAwesome;
+  font-size: 10px;
+  position: absolute;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  cursor: default;
+  content: "\f0d7";
+  color: #ffffff;
+  bottom: -12px;
+  left: 50%;
+  margin-left: -3px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.sf-menu > li > a {
+  display: block;
+  text-transform: uppercase;
+  font: 400 14px/14px "Asap", sans-serif;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  color: #ffffff;
+}
+@media (max-width: 979px) {
+  .sf-menu > li > a {
+    font-size: 12px;
+  }
+}
+.sf-menu > li > a:hover {
+  color: #efc74f;
+}
+.sf-menu .sfHover > a {
+  color: #efc74f;
+}
+.sf-menu .sfHover > a:after {
+  color: #efc74f;
+}
+.sf-menu > li.current > a {
+  color: #efc74f;
+}
+.sf-menu > li.current > a:after {
+  color: #efc74f;
+}
+/* First level sub-menu styles
+========================================================*/
+.sf-menu ul {
+  display: none;
+  min-width: 123px;
+  font: 400 14px/28px "Merriweather Sans", sans-serif;
+  position: absolute;
+  top: 57px;
+  left: 50%;
+  margin-left: -61.5px;
+  background: #ffffff;
+  text-align: center;
+  padding: 10px 0 7px 0;
+  z-index: 2;
+  border: 1px solid #a9a29c;
+}
+.sf-menu ul:before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 18px;
+  height: 10px;
+  overflow: hidden;
+  background: url(../images/triangle1.png) no-repeat center top;
+  top: -10px;
+  left: 50%;
+  margin-left: -9px;
+}
+.sf-menu ul li {
+  position: relative;
+  display: block;
+}
+.sf-menu ul li > .sf-with-ul:after {
+  display: block;
+  font-family: FontAwesome;
+  font-size: 10px;
+  position: absolute;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  cursor: default;
+  content: "\f0da";
+  color: #312e2c;
+  bottom: -1px;
+  right: 15px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.sf-menu ul li a {
+  display: block;
+  color: #312e2c;
+  text-transform: uppercase;
+}
+.sf-menu ul li a:hover {
+  color: #ffffff;
+  background: #efc74f;
+}
+.sf-menu ul li + li {
+  border-top: 1px solid #eaeaea;
+}
+.sf-menu ul > .sfHover > a {
+  background: #efc74f;
+  color: #ffffff;
+}
+.sf-menu ul > .sfHover > a:after {
+  color: #ffffff;
+}
+/* Second level sub-menu styles
+========================================================*/
+.sf-menu ul ul {
+  position: absolute;
+  top: -11px;
+  left: 123px;
+  margin-left: 0;
+  z-index: 4;
+}
+.sf-menu ul ul:before {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .sf-menu {
+    display: none;
+  }
+  nav {
+    width: 100%;
+    float: none;
+  }
+  .select-menu {
+    border-radius: none;
+    display: block;
+    text-transform: capitalize;
+    float: none;
+    color: #efc74f;
+    width: 100%;
+    background: #ffffff;
+    font: 400 14px/14px "Asap", sans-serif;
+    text-align: left;
+    border: 1px solid #c1c1c1;
+    padding: 2px 0;
+    position: relative;
+  }
+  .select-menu option {
+    text-align: left;
+    position: relative;
+  }
+}
+/*Core variables and mixins*/
+/* Stuck menu styles
+========================================================*/
+.isStuck {
+  z-index: 999;
+  position: fixed;
+  -webkit-box-shadow: 0 0 4px 0 #000000;
+  box-shadow: 0 0 4px 0 #000000;
+}
+@media only screen and (max-width: 979px) {
+  .isStuck {
+    display: none !important;
+  }
+}
+/*========================================================
+                    CONTENT styles
+=========================================================*/
+#content.common {
+  padding-top: 75px;
+  padding-bottom: 53px;
+}
+#content.common__inset1 {
+  padding-bottom: 35px;
+}
+#content.common__inset2 {
+  padding-bottom: 75px;
+}
+/* ======= Banner 1 Bed & Breakfast ======= */
+.banner1 {
+  background: #312e2c;
+  padding: 35px 0 38px;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .banner1 {
+    padding: 40px 20px 10px;
+  }
+}
+/* ======= Box 1 Bed & Breakfast ======= */
+.box1 {
+  position: relative;
+  padding-left: 70px;
+  padding-right: 21px;
+}
+.box1:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 1px;
+  height: 110px;
+  top: 0;
+  right: 0;
+  background: #44403d;
+}
+@media (max-width: 1199px) {
+  .box1:after {
+    display: none;
+  }
+}
+.box1 .label {
+  position: absolute;
+  top: -4px;
+  left: 0;
+}
+.box1 h2 {
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+.box1 .heading {
+  display: block;
+  color: #efc74f;
+  text-transform: uppercase;
+  font: 400 13px/17px "Droid Sans", sans-serif;
+  margin-bottom: 11px;
+}
+.box1 .heading a:hover {
+  color: #ffffff;
+}
+.box1 p {
+  color: #8f8682;
+  line-height: 17px;
+}
+.box1.first {
+  margin-left: 21px;
+}
+.box1.last:after {
+  display: none;
+}
+@media (max-width: 767px) {
+  .box1 {
+    margin-bottom: 30px;
+  }
+  .box1.first {
+    margin-left: 0;
+  }
+}
+/* ======= Box 2 Why choose us? ======= */
+.box2 {
+  padding-right: 45px;
+}
+@media (max-width: 767px) {
+  .box2 {
+    margin-bottom: 50px;
+  }
+}
+/* ======= Box 3 our services ======= */
+.box3 {
+  background: #312e2c;
+  border: 1px solid #524e4b;
+  padding-bottom: 26px;
+}
+.box3 h3,
+.box3 p {
+  padding: 0 16px;
+}
+.box3 h3 {
+  margin-bottom: 8px;
+  margin-top: 20px;
+  color: #efc74f;
+}
+.box3 h3 a:hover {
+  color: #ffffff;
+}
+@media (max-width: 767px) {
+  .box3 {
+    margin-bottom: 50px;
+  }
+  .box3 img {
+    width: 100%;
+  }
+}
+/* ======= Box 3 Wrapper 1 ======= */
+.box3-wrapper1 > p {
+  font: 400 13px/18px "Asap", sans-serif;
+  margin-bottom: 30px;
+}
+/* ======= HR 1 ======= */
+.hr1 {
+  border: none;
+  width: 100%;
+  height: 1px;
+  margin: 61px 0 60px;
+  background: #615e5a;
+}
+.hr1.hr2 {
+  margin: 86px 0 54px;
+}
+.hr1.hr3 {
+  margin: 75px 0 53px;
+}
+/* ======= Post 1 Latest News ======= */
+.post1 {
+  position: relative;
+}
+.post1 time {
+  display: block;
+  margin-bottom: 9px;
+  font: 700 13px/18px "Asap", sans-serif;
+  color: #efc74f;
+}
+.post1 h4 {
+  margin-bottom: 12px;
+}
+.post1-wrapper1 {
+  padding-bottom: 9px;
+  margin-top: -7px;
+}
+.post1-wrapper1 .post1 + .post1 {
+  margin-top: 63px;
+}
+.post1-wrapper1 .post1 + .post1:before {
+  position: absolute;
+  display: block;
+  content: '';
+  overflow: hidden;
+  left: 0;
+  top: -32px;
+  width: 100%;
+  height: 1px;
+  background: url(../images/border1.png) repeat-x;
+}
+.post1-wrapper1 .btn-default {
+  margin-top: 31px;
+}
+@media (max-width: 767px) {
+  .post1-wrapper1 {
+    margin-bottom: 50px;
+  }
+}
+/* ======= Box 4 Welcome ======= */
+.box4 h6 {
+  margin-bottom: 25px;
+}
+.box4 h5 {
+  margin-bottom: 25px;
+}
+.box4 .btn-default {
+  margin-top: 30px;
+}
+.box4-wrapper1 {
+  margin-top: -9px;
+  position: relative;
+  padding-bottom: 9px;
+}
+.box4-wrapper1:before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: -57px;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: #504c48;
+}
+@media (max-width: 1199px) {
+  .box4-wrapper1:before {
+    left: -40px;
+  }
+}
+@media (max-width: 767px) {
+  .box4-wrapper1:before {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .box4-wrapper1 {
+    margin-bottom: 50px;
+  }
+}
+/* ======= Box 5 Activities ======= */
+.box5 .h7 {
+  margin-top: 7px;
+}
+.box5-wrapper1 {
+  margin-top: -7px;
+  position: relative;
+  padding-bottom: 9px;
+}
+.box5-wrapper1:before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: -57px;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: #504c48;
+}
+@media (max-width: 1199px) {
+  .box5-wrapper1:before {
+    left: -40px;
+  }
+}
+@media (max-width: 767px) {
+  .box5-wrapper1:before {
+    display: none;
+  }
+}
+.box5-wrapper1 .box5 {
+  margin-bottom: 26px;
+}
+.box5-wrapper1 h5 {
+  margin-bottom: 19px;
+  color: #efc74f;
+}
+.box5-wrapper1 .btn-default {
+  margin-top: 6px;
+}
+/* ======= Box 6 About ======= */
+.box6 {
+  position: relative;
+  padding-left: 250px;
+}
+.box6 img {
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+.box6 h4 {
+  margin-bottom: 19px;
+}
+.box6 p {
+  margin-bottom: 16px;
+}
+@media (max-width: 767px) {
+  .box6 {
+    padding-left: 0;
+  }
+  .box6 img {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+.box6-wrapper1 {
+  margin-top: -6px;
+}
+.with-border1 {
+  position: relative;
+}
+.with-border1:before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: -57px;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: #504c48;
+}
+@media (max-width: 1199px) {
+  .with-border1:before {
+    left: -40px;
+  }
+}
+@media (max-width: 767px) {
+  .with-border1:before {
+    display: none;
+  }
+}
+/* ======= Box 7 Did you know? ======= */
+.box7 {
+  padding-left: 70px;
+  position: relative;
+}
+.box7 i {
+  font-size: 55px;
+  color: #efc74f;
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+.box7 h4 {
+  margin-bottom: 3px;
+}
+.box7-wrapper1 {
+  margin-top: -6px;
+}
+.box7-wrapper1 .box7 {
+  margin-bottom: 21px;
+}
+@media (max-width: 767px) {
+  .box7-wrapper1 {
+    margin-bottom: 50px;
+  }
+}
+/* ======= Blockquote 1 Testimonials ======= */
+.blockquote1 {
+  color: #8f8682;
+  padding-left: 24px;
+  padding-top: 7px;
+  position: relative;
+}
+.blockquote1:before {
+  position: absolute;
+  content: '“';
+  display: block;
+  font: 400 48px/18px "Asap", sans-serif;
+  color: #8f8682;
+  left: 0;
+  top: 0;
+}
+.blockquote1 cite {
+  display: block;
+  font: 400 13px/18px "Asap", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+.blockquote1 .author {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: -1px;
+  color: #ffffff;
+}
+.blockquote1 a {
+  color: #efc74f;
+  font-size: 13px;
+  line-height: 17px;
+  display: inline-block;
+}
+.blockquote1 a:hover {
+  color: #ffffff;
+}
+.blockquote1-wrapper1 {
+  margin-top: 32px;
+  margin-bottom: 59px;
+}
+.blockquote1-wrapper1 .blockquote1 {
+  margin-bottom: 34px;
+}
+.box4-wrapper2 {
+  margin-top: -7px;
+}
+/* ======= Box 8 Gallery Our rooms ======= */
+.box8 .gallery_image {
+  margin-bottom: 34px;
+}
+.box8 h4 {
+  margin-bottom: 9px;
+}
+.box8 .btn-default {
+  margin-top: 30px;
+}
+.gallery {
+  margin-top: -2px;
+}
+.gallery .box8 {
+  margin-bottom: 44px;
+}
+/* ======= Box 9 Special Offers ======= */
+.box9 {
+  padding-left: 370px;
+  position: relative;
+}
+.box9 img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.box9 p {
+  margin-bottom: 15px;
+}
+.box9 .list1 {
+  margin-top: 21px;
+}
+@media (max-width: 767px) {
+  .box9 {
+    padding-left: 0;
+  }
+  .box9 img {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.box9-wrapper1 {
+  margin-top: -4px;
+}
+/* ======= Box 10 hotel services ======= */
+.box10 .gallery_image {
+  margin-bottom: 24px;
+}
+@media (max-width: 767px) {
+  .box10 {
+    margin-bottom: 50px;
+  }
+}
+.box10 h5 {
+  color: #efc74f;
+}
+.box10 h5 a:hover {
+  color: #ffffff;
+}
+.gallery2 {
+  margin-bottom: 21px;
+  margin-top: -3px;
+}
+/* ======= Post 2 Blog ======= */
+.post2 .head {
+  margin-bottom: 19px;
+}
+.post2 .head .label-wrapper {
+  text-align: right;
+}
+.post2 .head .label-wrapper .label {
+  margin-top: 4px;
+  display: inline-block;
+  text-align: center;
+  font: 400 13px/18px "Asap", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: #efc74f;
+  padding: 4px 19px 4px;
+}
+.post2 img {
+  margin-bottom: 28px;
+}
+.post2 .info {
+  margin-bottom: 13px;
+  overflow: hidden;
+  color: #ffffff;
+}
+.post2 .info time,
+.post2 .info span {
+  display: inline-block;
+  position: relative;
+  padding-left: 15px;
+  margin-right: 10px;
+}
+.post2 .info time:before,
+.post2 .info span:before {
+  display: block;
+  font-family: FontAwesome;
+  font-size: 12px;
+  position: absolute;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  cursor: default;
+  color: #efc74f;
+  line-height: 16px;
+  left: 0;
+  top: -2px;
+}
+.post2 .info time:before {
+  content: '\f073';
+}
+.post2 .info .by:before {
+  content: '\f007';
+  top: -1px;
+}
+.post2 .info .comments:before {
+  content: '\f075';
+}
+.post2 .btn-default {
+  margin-top: 30px;
+}
+.post2-wrapper1 {
+  margin-top: -6px;
+  margin-bottom: 88px;
+}
+.post2-wrapper1 .post2 {
+  margin-bottom: 36px;
+}
+/* ======= Google Map  ======= */
+.google-map1 {
+  margin-bottom: 44px;
+  margin-top: -2px;
+  height: 412px;
+}
+/* ======= Address  ======= */
+.address-block {
+  margin-top: -3px;
+}
+.address-block address {
+  display: block;
+  position: relative;
+  padding-left: 54px;
+}
+.address-block address:before {
+  display: block;
+  font-family: FontAwesome;
+  font-size: 30px;
+  position: absolute;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  cursor: default;
+  color: #efc74f;
+  left: 0;
+}
+.address-block address span {
+  display: block;
+}
+.address-block address.location:before {
+  content: '\f015';
+  top: 6px;
+}
+.address-block address.phones:before {
+  content: '\f095';
+  top: 9px;
+}
+.address-block address.mail:before {
+  font-size: 24px;
+  content: '\f0e0';
+  top: 1px;
+}
+.address-block address + address {
+  margin-top: 21px;
+}
+@media (max-width: 767px) {
+  .address-block {
+    margin-bottom: 50px;
+  }
+}
+/* ======= Box 11 Privacy Policy ======= */
+.box11 {
+  padding-right: 35px;
+}
+.box11 h5 {
+  margin-bottom: 9px;
+}
+.box11 p {
+  margin-bottom: 16px;
+}
+.box11-wrapper1 {
+  margin-top: -5px;
+}
+.box11-wrapper1 .box11 {
+  margin-bottom: 25px;
+}
+/* ======= Privacy Link ======= */
+.link-wrapper1 {
+  margin-top: 2px;
+}
+/* ======= Simple link ======= */
+.simple-link {
+  display: inline-block;
+  color: #efc74f;
+}
+.simple-link:hover {
+  color: #ffffff;
+}
+/* ======= List 1 ======= */
+.list1 li {
+  padding-left: 24px;
+  position: relative;
+}
+.list1 li a {
+  font: 700 13px/18px "Asap", sans-serif;
+  color: #efc74f;
+  text-transform: uppercase;
+}
+.list1 li a:hover {
+  color: #ffffff;
+}
+.list1 li:before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+  background: url(../images/list1.png) no-repeat center top;
+  left: 0;
+  top: 0;
+}
+.list1 li + li {
+  margin-top: 33px;
+}
+.list1 li p {
+  margin-top: 10px;
+}
+.list1__inset1 li + li {
+  margin-top: 12px;
+}
+/* ======= Social buttons 1 ======= */
+.socials1 li {
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+}
+.socials1 li + li {
+  margin-left: 7px;
+}
+.socials1 li a:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+/* ======= Gallery  ======= */
+.gallery_image a.big-image {
+  display: block;
+  position: relative;
+  background: #efc74f;
+}
+.gallery_image a.big-image img {
+  -webkit-box-shadow: 0 0 0 0 #ffffff;
+  box-shadow: 0 0 0 0 #ffffff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+.gallery_image a.big-image .gallery_hover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.gallery_image a.big-image .gallery_hover i {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-size: 40px;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -21px;
+}
+.gallery_image a.big-image:hover img {
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+.gallery_image a.big-image:hover .gallery_hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.gallery_image a.big-image:hover .gallery_hover i {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+/*========================================================
+                    FOOTER styles
+=========================================================*/
+#footer {
+  font: 400 11px/18px "Droid Sans", sans-serif;
+  background: #202020;
+  color: #8f8682;
+  padding: 49px 0;
+}
+#footer .links {
+  float: right;
+  text-align: right;
+}
+@media (max-width: 767px) {
+  #footer .links {
+    float: none;
+    text-align: center;
+  }
+}
+#footer .links ul li {
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+#footer .links ul li + li {
+  margin-left: 18px;
+}
+#footer .links ul li + li:before {
+  width: 4px;
+  height: 4px;
+  border-radius: 10px;
+  position: absolute;
+  display: block;
+  content: '';
+  left: -12px;
+  top: 6px;
+  background: #efc74f;
+}
+#footer .privacy-block {
+  float: left;
+}
+@media (max-width: 767px) {
+  #footer .privacy-block {
+    float: none;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+/*========================================================
+                    Widget styles
+=========================================================*/
+/* UItoTop styles
+========================================================*/
+#toTop {
+  display: none;
+  text-decoration: none;
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+  overflow: hidden;
+  border: none;
+  color: #8f8682;
+  font-size: 43px;
+  line-height: 38px;
+  z-index: 20;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#toTop:hover {
+  outline: none;
+  color: #efc74f;
+}
+@media only screen and (max-width: 1199px) {
+  #toTop {
+    display: none !important;
+  }
+}
+/*Core variables and mixins*/
