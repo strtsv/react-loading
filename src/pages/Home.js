@@ -1,16 +1,22 @@
 import React from "react";
-import Header from "../components/Header";
+import BackgroundWrapper from "../components/BackgroundWrapper";
+import BigWrapper from "../components/BigWrapper";
 import Content from "../components/Content";
+import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 const home = () => {
-  return (
-    <>
-      <Header />
-      <Content />
-      <Footer />
-    </>
-  );
+    return (
+      <>
+        <BackgroundWrapper>
+          <BigWrapper>
+            <Header />
+            <Content />
+          </BigWrapper>
+        </BackgroundWrapper>
+        <Footer></Footer>
+      </>
+    );
 };
 
 export default home;

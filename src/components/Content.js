@@ -2,6 +2,7 @@ import React from "react";
 import { WOW } from "wowjs";
 
 import Banner from "./Banner";
+import Wrapper from "./Wrapper";
 import Slider from "../pages/Slider";
 
 import slider1 from "../images/slider1.png";
@@ -12,7 +13,7 @@ class Content extends React.Component {
     const wow = new WOW({
       offset: 100,
       mobile: false,
-      live: true,
+      live: true
     });
     wow.init();
   }
@@ -33,6 +34,7 @@ class Content extends React.Component {
                 <div className="clearfix" />
               </div>
               <Banner></Banner>
+              <Wrapper></Wrapper>
             </div>
           </div>
         </div>
